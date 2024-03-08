@@ -1,16 +1,17 @@
 # parcial1
-Juan Sebastián Valencia Charry		2205254
-Andrés David Luna Peña 						2184984
+1 Juan Sebastián Valencia Charry		2205254
+2 Andrés David Luna Peña 						2184984
 
 1. Instalación módulo:
 Asegúrate de tener instalado el módulo pam_listfile
+
 Apt get update
 
 Apt-get- install apache2 libapache2-mod-authnz-pam
 
 
 2. Crear archivo de lista:
-Crea un archivo con la lista de usuarios denegados (/etc/pam.d/deny_users.txt):
+Crea un archivo con la lista de usuarios denegados (/etc/pam.d/denegados.txt):
 
 usuario1
 usuario2
