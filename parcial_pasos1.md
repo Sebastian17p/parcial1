@@ -1,6 +1,6 @@
 # parcial1
-1 Juan Sebastián Valencia Charry		2205254
-2 Andrés David Luna Peña 						2184984
+#Juan Sebastián Valencia Charry		2205254
+# Andrés David Luna Peña 						2184984
 
 1. Instalación módulo:
 Asegúrate de tener instalado el módulo pam_listfile
