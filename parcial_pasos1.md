@@ -1,5 +1,5 @@
 # parcial1
-#Juan Sebastián Valencia Charry		2205254
+# Juan Sebastián Valencia Charry		2205254
 # Andrés David Luna Peña 						2184984
 
 1. Instalación módulo:
