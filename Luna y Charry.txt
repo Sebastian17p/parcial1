@@ -1,10 +1,10 @@
-Juan Sebasti醤 Valencia Charry				2205254
-Andr閟 David Luna Pe馻 						2184984
+Juan Sebasti谩n Valencia Charry		2205254
+Andr茅s David Luna Pe帽a 						2184984
 
 
 Denegar usuarios con PAM y pam_listfile
-1. Instalaci髇 m骴ulo:
-Aseg鷕ate de tener instalado el m骴ulo pam_listfile
+1. Instalaci贸n m贸dulo:
+Aseg煤rate de tener instalado el m贸dulo pam_listfile
 Apt get update
 
 Apt-get- install apache2 libapache2-mod-authnz-pam
@@ -18,7 +18,7 @@ usuario2
 ...
 
 
-3. Configuraci髇 de los m骴ulos PAM y configuraci髇 de los Denegados:
+3. Configuraci贸n de los m贸dulos PAM y configuraci贸n de los Denegados:
 
 auth required 			pam_unix.so 
 account required 		pam_unix.so 
@@ -26,24 +26,24 @@ auth required 			pam_listfile.so onerr=fail
 item=user sense=deny
 file=/etc/apache2/denegados.txt
 
-4. Habilitaci髇 p醙ina:
+4. Habilitaci贸n p谩gina:
 
 a2dissite 000-default.conf 			Deshabilita
 a2ensite 0oo-default.conf 			Habilita
 
-5. Configuraci髇 de Apache: 
-Edita el archivo de configuraci髇 de Apache para habilitar la autenticaci髇 y autorizaci髇 PAM. Esto se hace mediante la configuraci髇 del archivo 000-default.conf o cualquier archivo de configuraci髇 relevante para tu sitio web en /etc/apache2/sites-available/.
+5. Configuraci贸n de Apache: 
+Edita el archivo de configuraci贸n de Apache para habilitar la autenticaci贸n y autorizaci贸n PAM. Esto se hace mediante la configuraci贸n del archivo 000-default.conf o cualquier archivo de configuraci贸n relevante para tu sitio web en /etc/apache2/sites-available/.
 6.Restart al apache:
 Hacemos el restart con systemctl Restart apache2 para poder guardar los cambios realizados a este mismo.
-7. Instalaci髇 del t鷑el:
-A continuaci髇, podremos ver los pasos a seguir para instalar correctamente el t鷑el.
+7. Instalaci贸n del t煤nel:
+A continuaci贸n, podremos ver los pasos a seguir para instalar correctamente el t煤nel.
 Pasos:
 1. Registrarte en ngrok
-2. Selecci髇 Linux
+2. Selecci贸n Linux
 
-3. Utilizamos el c骴igo brindado por el servidor para la instalaci髇 de nrgok
+3. Utilizamos el c贸digo brindado por el servidor para la instalaci贸n de nrgok
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
-| sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt爄nstall爊grok
+| sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt聽install聽ngrok
 
 
